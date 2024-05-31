@@ -1,0 +1,30 @@
+
+
+.deco-none {
+  text-decoration: none;
+}
+.logo {
+  width: 10rem;
+  height: 3rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  /*background-color: rgb(77, 74, 74);*/
+}
+.header_menu {
+  list-style: none;
+  display: flex;
+  color: rgb(0, 0, 0);
+  margin-top: 2px;
+  gap: 1.44rem;
+}
+li{
+  font-family: alatsi;
+}
+.header_menu > li:hover {
+  cursor: pointer;
+  color: orange;
+  cursor: pointer;
+}
+
