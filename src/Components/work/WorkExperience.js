@@ -3,6 +3,7 @@ import "../About/about.css";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { skillData } from "../../Static/Data/Data";
 
+
 const WorkExperience = () => {
     return (
         <section className="about mt-4" id="about">
