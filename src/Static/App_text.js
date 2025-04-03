@@ -7,8 +7,9 @@ const App_text = () => {
       options={{
         strings: [
           "Nicholas Kiplimo.",
-          "Junior Software Engineer.",
-          "React Js Developer.",
+          "Software Engineer.",
+          "Turnkey Africa Ltd.",
+          "Oracle ADF Developer.",
           "Spring Boot Developer.",
         ],
         autoStart: true,

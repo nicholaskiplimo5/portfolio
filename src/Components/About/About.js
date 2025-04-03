@@ -9,8 +9,7 @@ const About = () => {
       <div className=" section-title">
         <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          labore vitae aspernatur voluptatum animi.
+          I define my work with a lot of discipline and passion to achieve the desired requirements.
         </p>
       </div>
       <div className="row">
@@ -23,7 +22,7 @@ const About = () => {
         </div>
         <div className=" col-md-8 pt-4 pt-lg-0">
           <h3 className="heading-orange">Software Engineer</h3>
-          <p className="text-black fw-bold">
+          <p className="text-black">
             Junior software developer with 1 year of experience in software
             development and administration, I am a result driven individual with
             knowledge and skills to complete the task assigned. I belive in team
@@ -35,7 +34,7 @@ const About = () => {
             <div className="col-lg-5">
               <ul>
                 <li>
-                  Phone: <strong>+254791980616</strong>
+                  Contact: <strong>+254-791-980616</strong>
                 </li>
                 <li>
                   Email: <strong>nicholaskiplimo5@gmail.com</strong>{" "}
@@ -44,7 +43,7 @@ const About = () => {
             </div>
             <div className="col-lg-7">
               <li>
-                Qualification: <strong>Degree</strong>
+                Education: <strong>Computer Science</strong>
               </li>
               <li>
                 Specialization: <strong>Software & System Applications</strong>

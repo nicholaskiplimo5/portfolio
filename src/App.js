@@ -16,6 +16,7 @@ import {
 import "./App.css";
 import Demo from "./Static/images/demo.jpg";
 import { Link } from "react-router-dom";
+import WorkExperience from "./Components/work/WorkExperience";
 
 const App = () => {
   const Handlechat = () => {
@@ -28,8 +29,8 @@ const App = () => {
       <div className=" container">
         <Nav />
         <div class="col-md-12 mt-4 mb-2" role="alert">
-          Concider hiring me! Website under dev
-          <span className=" badge bg-primary m-2 blink">Open to Job.</span>
+          Current Employer:
+          <span className=" badge bg-primary m-2">Turnkey Africa Ltd.</span>
         </div>
         <div className="row">
           <div className="col-md-6 mt-2">
@@ -91,6 +92,8 @@ const App = () => {
         </div>
 
         <About />
+
+        <WorkExperience/>
 
         {/* Section: Projects */}
         <div className="row mb-5 mt-3">
