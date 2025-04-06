@@ -6,11 +6,10 @@ const Nav = () => {
   return (
     <div className="container navbar header">
       <Link to={"/"} style={{color:"black", fontSize:"20px", fontFamily:"cadibri"}} className="nav-brand fw-bold deco-none">NICHOLAS K.</Link>
-      <ul className="nav fw-bold header_menu">
-        <Link to={"#about"} className="nav-item">About</Link>
-        <Link to={"/projects"} className="nav-item text-decoration-none">Projects</Link>
-        <Link to={"/reach_out"} className="nav-item text-decoration-none">Get In Touch</Link>
-      </ul>
+        <ul className="nav fw-bold header_menu">
+            <a href="#projects" className="nav-item text-decoration-none">Projects</a>
+            <a href="#contact" className="nav-item text-decoration-none">Get In Touch</a>
+        </ul>
     </div>
   );
 };

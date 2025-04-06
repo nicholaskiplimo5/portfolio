@@ -37,6 +37,7 @@ export const projectData = [
     updated: "10/03/2023",
   },
 ];
+
 export const skillData = [
   {
     id: 1,
@@ -66,5 +67,31 @@ export const skillData = [
     icon: skillss,
     skill: "Soft Skills",
     tech: ["Team Work", "Good Communication skills", "Problem Solving", "Results Oriented"],
+  },
+];
+
+export const experiences = [
+  {
+    title: "Software Engineer",
+    company: "Turnkey Africa Ltd",
+    duration: "2023 — Present",
+    description:
+        "I develop and customize TurnQuest ERP Application, focusing on database design, API development with Spring Boot, and enterprise reporting. " +
+        "I support system optimization, user training, code reviews, and manage deployments through CI/CD pipelines while collaborating with teams for environment setup and maintenance",
+    skills: ["PLSQL", "Oracle Database", "JAVA", "Spring Boot", 'Angular','Docker'],
+  },
+  {
+    title: "Software and Application - [Support Engineer]",
+    company: "ICT Authority",
+    duration: "2022 — 2023",
+    description:
+        "I assist in the development, testing, and deployment of software applications, focusing on troubleshooting, database management, and API integration. I support system upgrades, server maintenance, and ensure smooth data exchange between applications. Additionally, " +
+        "I conduct system testing, create documentation, and provide user training for new software implementations while staying up-to-date with emerging technologies.",
+    skills: [
+      "JavaScript",
+      "React",
+      "HTML & SCSS",
+      "JAVA",
+    ],
   },
 ];

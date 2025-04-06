@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" container">
+    <div className=" container" id={"contact"}>
       <div className=" row justify-content-center">
         <div className=" col-md-12 mb-3">
           <div className="row justify-content-center">

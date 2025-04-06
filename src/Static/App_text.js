@@ -6,15 +6,14 @@ const App_text = () => {
     <Typewriter
       options={{
         strings: [
-          "Nicholas Kiplimo.",
-          "Software Engineer.",
-          "Turnkey Africa Ltd.",
-          "Oracle ADF Developer.",
-          "Spring Boot Developer.",
+          "I am Nicholas Kiplimo.",
+          "Currently Working at Turnkey Africa Ltd.",
+          "As a Software Engineer.",
+          "Lets have a chat.",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 10,
       }}
     />
   );

@@ -3,8 +3,15 @@
     padding-bottom: 20px;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
 .section-title > h2 {
-    font-size: 30px; /* Adjusted font size */
+    font-size: 20px; /* Adjusted font size */
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -49,4 +56,58 @@
     gap: 1rem;
     color: white;
     justify-content: space-between;
+}
+
+.work-experience {
+    font-family: 'Arial', sans-serif;
+}
+
+.work-experience h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.company {
+    color: #000000;
+}
+
+.job-duration {
+    font-size: 14px;
+    color: #000000;
+}
+
+.job-description {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.skills-used {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.skill-badge-css {
+    background: #112240;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #64ffda;
 }

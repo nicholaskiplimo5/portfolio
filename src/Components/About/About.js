@@ -1,93 +1,77 @@
 import React from "react";
 import "./about.css";
 import { BsCheckCircleFill } from "react-icons/bs";
-import { skillData } from "../../Static/Data/Data";
+import {experiences, skillData} from "../../Static/Data/Data";
 
 const About = () => {
   return (
-    <section className="about mt-4" id="about">
-      <div className=" section-title">
-        <h2>About Me</h2>
-        <p>
-          I define my work with a lot of discipline and passion to achieve the desired requirements.
-        </p>
-      </div>
-      <div className="row">
-        <div className=" col-md-4">
-          <img
-            className=" img-fluid"
-            src="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            alt=""
-          />
-        </div>
-        <div className=" col-md-8 pt-4 pt-lg-0">
-          <h3 className="heading-orange">Software Engineer</h3>
-          <p className="text-black">
-            Junior software developer with 1 year of experience in software
-            development and administration, I am a result driven individual with
-            knowledge and skills to complete the task assigned. I belive in team
-            work as it build oneself and encourage productivity. I belive i am
-            the person you need to get your work done. Please Contact me. I am
-            open to Employment on either Contract of Parmanent terms.
-          </p>
-          <div className="row">
-            <div className="col-lg-5">
-              <ul>
-                <li>
-                  Contact: <strong>+254-791-980616</strong>
-                </li>
-                <li>
-                  Email: <strong>nicholaskiplimo5@gmail.com</strong>{" "}
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-7">
-              <li>
-                Education: <strong>Computer Science</strong>
-              </li>
-              <li>
-                Specialization: <strong>Software & System Applications</strong>
-              </li>
-            </div>
-          </div>
-          <div className="col-mg-12 mt-4">
-            <p className="fw-bold">
-              <span>Note: </span>Download my resume to View my Education
-              background and more Information about me.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* skills */}
-      <section className=" skills mt-3" id="skills">
-        <div>
-          <h2>Skills</h2>
+      <section className="about mt-4" id="about">
+        <div className=" section-title mt-4">
+          <h2>Work Experience</h2>
           <p>
-            I have knowledge in the following technologies. But i am not
-            limited to this, I am flexible to learn new skills and technolgies
+            My Work Experience and Expertise in the field of Computing and Information.
           </p>
-          <div className="row">
-            <div className="about-category">
-              {skillData.map((skill) => (
-                <div className=" card rounded-5 ms-2 bg-transparent">
-                  <img className="image-center" src={skill.icon} alt="" />
-                  <h5 className="card-title ms-3">{skill.skill}</h5>
-                  <div className=" card-body">
-                    {skill.tech.map((tch) => (
-                      <ul className=" list-unstyled about-category" key={1}>
-                        <div><BsCheckCircleFill/></div>
-                        <div><li>{tch} </li></div>
-                      </ul>
-                    ))}
+        </div>
+        <div className="row">
+          <div className="col-md-6">
+            <img
+                className=" img-fluid rounded-3"
+                src="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                alt=""
+            />
+          </div>
+          <div className="col-md-6">
+            <div className="work-experience">
+              {experiences.map((job, index) => (
+                  <div key={index} className="job">
+                    <div className="job-header">
+                              <span> {job.title} · <span className="company">{job.company}</span>
+                              </span>
+                      <span className="job-duration">{job.duration}</span>
+                    </div>
+                    <p className="job-description">{job.description}</p>
+                    <div className="skills-used">
+                      {job.skills.map((skill, i) => (
+                          <span key={i} className="skill-badge-css">{skill}</span>
+                      ))}
+                    </div>
                   </div>
-                </div>
               ))}
             </div>
           </div>
         </div>
+
+        {/* skills */}
+        <section className=" skills mt-3" id="skills">
+          <div className='section-title mt-4'>
+            <h2>SKILLS</h2>
+            <p>
+              I have knowledge in the following technologies. But i am not
+              limited to this, I am flexible to learn new skills and technolgies
+            </p>
+            <div className="row">
+              <div className="about-category">
+                {skillData.map((skill) => (
+                    <div className=" card rounded-5 ms-2 bg-transparent">
+                      <img className="image-center" src={skill.icon} alt=""/>
+                      <h5 className="card-title ms-3">{skill.skill}</h5>
+                      <div className=" card-body">
+                        {skill.tech.map((tch) => (
+                            <ul className=" list-unstyled about-category" key={1}>
+                              <div><BsCheckCircleFill/></div>
+                              <div>
+                                <li>{tch} </li>
+                              </div>
+                            </ul>
+                        ))}
+                      </div>
+                    </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
-    </section>
   );
 };
 

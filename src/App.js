@@ -14,9 +14,7 @@ import {
   BsDownload,
 } from "react-icons/bs";
 import "./App.css";
-import Demo from "./Static/images/demo.jpg";
 import { Link } from "react-router-dom";
-import WorkExperience from "./Components/work/WorkExperience";
 
 const App = () => {
   const Handlechat = () => {
@@ -28,22 +26,20 @@ const App = () => {
     <div className=" alert alert-primary">
       <div className=" container">
         <Nav />
-        <div class="col-md-12 mt-4 mb-2" role="alert">
+        <div className="col-md-12 mt-4 mb-2" role="alert">
           Current Employer:
           <span className=" badge bg-primary m-2">Turnkey Africa Ltd.</span>
         </div>
         <div className="row">
           <div className="col-md-6 mt-2">
             <h3>
-              I'm{" "}
+              {" "}
               <span className=" text-bg-info fw-bold">
                 <Text />
               </span>
             </h3>
             <p>
-              Motivated self-learning in Information Technology. Intrested in
-              exploring about computer Network, cloud Computing, DevOps and Web
-              Development. Now looking for More experience in my field.
+              Results-driven Software Engineer with 2+ years of experience in building and supporting enterprise systems. Skilled in Oracle ERP, Java, Spring Boot, and database management. I specialize in API development, system integration, enterprise reporting, and performance optimization. Passionate about delivering scalable solutions that drive business success, with hands-on experience in DevOps, CI/CD pipelines, cloud technologies, technical documentation, and user training.
             </p>
             <div className=" mb-3">
               <button
@@ -93,10 +89,8 @@ const App = () => {
 
         <About />
 
-        <WorkExperience/>
-
         {/* Section: Projects */}
-        <div className="row mb-5 mt-3">
+        <div className="row mb-5 mt-3" id={" "}>
           <p className=" heading">My Projects</p>
           <div className="project-list">
            
