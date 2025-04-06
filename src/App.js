@@ -59,15 +59,8 @@ const App = () => {
                 <span className=" ms-2 me-2"> Hire Me </span>
                 <BsWhatsapp className=" me-2" />
               </button>
-              <button className="btn btn-primary h-25 rounded-5 text-white fw-bold p-2">
-                <a
-                  className="text-decoration-none text-white me-2 ms-2"
-                  onClick={handleDownload}
-                >
-                  {" "}
-                  Download Resume
-                </a>
-                <BsDownload className=" me-2" />
+              <button className="btn btn-primary h-25 rounded-5 text-white fw-bold p-2" onClick={handleDownload}>
+                <span className=" ms-2 me-2"> Download Resume  </span> <BsDownload className=" me-2" />
               </button>
             </div>
             <div className=" col-md-6">
