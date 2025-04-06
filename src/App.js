@@ -22,6 +22,16 @@ const App = () => {
       "https://api.whatsapp.com/send/?phone=0791980616&text=Hello&type=phone_number&app_absent=0"
     );
   };
+
+  function handleDownload() {
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "Nicholas_Kiplimo_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <div className=" alert alert-primary">
       <div className=" container">
@@ -43,20 +53,20 @@ const App = () => {
             </p>
             <div className=" mb-3">
               <button
-                onClick={Handlechat}
-                className="btn btn-primary h-25 rounded-5 text-white fw-bold me-2 p-2"
+                onClick={Handlechat} disabled={true}
+                className="btn btn-primary h-25 rounded-5 text-white fw-bold me-2 p-2 chat"
               >
                 <span className=" ms-2 me-2"> Hire Me </span>
                 <BsWhatsapp className=" me-2" />
               </button>
               <button className="btn btn-primary h-25 rounded-5 text-white fw-bold p-2">
-                <Link
+                <a
                   className="text-decoration-none text-white me-2 ms-2"
-                  to={resume}
+                  onClick={handleDownload}
                 >
                   {" "}
                   Download Resume
-                </Link>
+                </a>
                 <BsDownload className=" me-2" />
               </button>
             </div>
