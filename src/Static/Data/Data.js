@@ -2,6 +2,7 @@ import backend from "../images/c.svg";
 import web from "../images/w.svg";
 import support from "../images/s.png";
 import skillss from "../images/r.svg";
+import { BsFacebook, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 export const projectData = [
   {
     id: 1,
@@ -95,3 +96,39 @@ export const experiences = [
     ],
   },
 ];
+
+export const socialData = [
+  {
+    id: 1,
+    name: 'LinkedIn',
+    icon: BsLinkedin({ style: { fill: "blue" } }),
+    url: 'https://www.linkedin.com/in/nicholas-kiplimo-a4511a170/',
+  },
+  {
+    id: 2,
+    name: 'Github',
+    icon: BsGithub({ style: { fill: "black" } }),
+    url: 'https://github.com/nicholaskiplimo5',
+  },
+  {
+    id: 3,
+    name: 'Facebook',
+    icon: BsFacebook({ style: { fill: "blue" } }),
+    url: 'https://www.facebook.com/nicholas.kiplimo.908/',
+  },
+  {
+    id: 4,
+    name: 'Whatsapp',
+    icon: BsWhatsapp({ style: { fill: "green" } }),
+    url: 'https://api.whatsapp.com/send/?phone=0791980616&text=Hello there i am ..&type=phone_number&app_absent=0',
+  },
+];
+
+export const handleSocialIcons = (soc) => {
+  const found = socialData.find((item) => item.name === soc);
+  if (found) {
+    window.open(found.url, "_blank");
+  } else {
+    console.log("Invalid Social Icon:", soc);
+  }
+};
