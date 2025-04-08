@@ -26,7 +26,7 @@ const App = () => {
           <Nav />
           <section className="home" id={"home"}>
               <div className="col-md-12 mt-4 mb-2 desc" role="alert">
-                Current Employer: <span className="badge bg-primary m-2">Turnkey Africa Ltd. [Software Engineer]</span>
+                Current Employer: <span className="badge bg-primary m-2">Turnkey Africa Ltd - [Software Engineer]</span>
               </div>
               <div className="row">
                 <div className="col-md-6 mt-2">

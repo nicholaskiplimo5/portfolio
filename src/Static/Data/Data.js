@@ -1,7 +1,8 @@
 import backend from "../images/c.svg";
 import web from "../images/w.svg";
 import support from "../images/s.png";
-import skillss from "../images/r.svg";
+import skill from "../images/r.svg";
+import ports from "../images/my_port.png";
 import { BsFacebook, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 export const projectData = [
   {
@@ -28,8 +29,8 @@ export const projectData = [
   },
   {
     id: 3,
-    imgage:
-      "https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+    imgage: ports,
+      //"https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
     title: "dev portfolio",
     description: "My portfolio design",
     technologies: ["React Js", "css", "html"],
@@ -65,7 +66,7 @@ export const skillData = [
   },
   {
     id: 4,
-    icon: skillss,
+    icon: skill,
     skill: "Soft Skills",
     tech: ["Team Work", "Good Communication skills", "Problem Solving", "Results Oriented"],
   },
