@@ -5,7 +5,7 @@ import {experiences, skillData} from "../../Static/Data/Data";
 
 const About = () => {
   return (
-      <section className="about mt-4" id="about">
+      <section className="about mt-4" id="experience">
         <div className=" section-title mt-4">
           <h2>Work Experience</h2>
           <p>

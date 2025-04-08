@@ -11,3 +11,33 @@ export function handleDownload() {
     link.click();
     document.body.removeChild(link);
 }
+
+//Function to handle the mobile menu
+export const handleSmoothNavigate = (section, setIsOpen) => {
+    setIsOpen(false);
+
+    let id = "";
+
+    switch (section) {
+        case "home":
+            id = "home";
+            break;
+        case "experience":
+            id = "experience";
+            break;
+        case "skills":
+            id = "skills";
+            break;
+        case "contact":
+            id = "contact";
+            break;
+        default:
+            return;
+    }
+
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+};
+

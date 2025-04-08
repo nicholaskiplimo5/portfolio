@@ -115,3 +115,51 @@
     padding: 10px;
     cursor: pointer;
 }
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .home {
+        margin-top: 20px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .home .row {
+        flex-direction: column;
+    }
+
+    .home .col-md-6 {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .home h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .home p {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    .home img {
+        display: none;
+    }
+
+    .social-icons {
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

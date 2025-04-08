@@ -25,9 +25,8 @@ const App = () => {
         <div className=" container">
           <Nav />
           <section className="home" id={"home"}>
-              <div className="col-md-12 mt-4 mb-2" role="alert">
-                Current Employer:
-                <span className=" badge bg-primary m-2">Turnkey Africa Ltd. [Software Engineer]</span>
+              <div className="col-md-12 mt-4 mb-2 desc" role="alert">
+                Current Employer: <span className="badge bg-primary m-2">Turnkey Africa Ltd. [Software Engineer]</span>
               </div>
               <div className="row">
                 <div className="col-md-6 mt-2">
@@ -63,7 +62,7 @@ const App = () => {
                 </div>
                 <div className="col-md-6">
                   <img
-                      className=" img-fluid rounded-3"
+                      className=" img-fluid rounded-3 home-image"
                       src="https://media.istockphoto.com/id/1356364287/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-backlit-keyboard-screens-show.jpg?s=1024x1024&w=is&k=20&c=T3xezeQ1n3oB5mefJ3FePQlFnxyXaYOIAhnUHJWwra8="
                       alt=""
                   />
