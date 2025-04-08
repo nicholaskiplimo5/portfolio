@@ -7,7 +7,8 @@ const App_text = () => {
       options={{
         strings: [
           "I am Nicholas Kiplimo.",
-          "Lets have a chat.",
+          "Welcome to my page",
+          "Get to know me better...",
         ],
         autoStart: true,
         loop: true,

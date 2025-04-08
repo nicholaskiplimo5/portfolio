@@ -19,6 +19,11 @@
   }
 }
 
+.home{
+    margin-top: 60px;
+    height: 500px;
+}
+
 /*Projects Css*/
 .project-list {
   display: grid;
