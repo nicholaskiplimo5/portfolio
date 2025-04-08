@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Nav from "./Components/Nav/Nav";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
@@ -10,21 +10,14 @@ import {BsDownload } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
 import "./App.css";
 import {Link, useNavigate} from "react-router-dom";
+import ModalView from "./Components/ModalView";
 
 const App = () => {
   const navigate= useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleRedirection() {
     navigate("/projects");
-  }
-
-  function handleDownload() {
-    const link = document.createElement("a");
-    link.href = resume;
-    link.download = "Nicholas_Kiplimo_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
   }
 
   return (
@@ -51,9 +44,10 @@ const App = () => {
                   <span className=" ms-2 me-2">Check My Projects </span>
                   <FaArrowRight className=" me-2" />
                 </button>
-                <button className="btn btn-primary h-25 rounded-5 text-white fw-bold p-2" onClick={handleDownload}>
+                <button className="btn btn-primary h-25 rounded-5 text-white fw-bold p-2" onClick={()=> setIsOpen(true)}>
                   <span className=" ms-2 me-2"> View Resume  </span> <BsDownload className=" me-2" />
                 </button>
+                <ModalView isOpen={isOpen} url={resume} onClose={()=> setIsOpen(false)} />
               </div>
               <div className=" col-md-6">
                 <p>Follow Me:</p>
