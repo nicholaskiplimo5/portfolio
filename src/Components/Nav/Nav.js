@@ -24,6 +24,8 @@ const Nav = () => {
         )}
         <Link to={"/"} className="nav-brand fw-bold deco-none name">NICHOLAS K.</Link>
         <ul className="nav fw-bold header_menu">
+            <a href="#skills" className="nav-item text-decoration-none">Skills</a>
+            <a href="#experience" className="nav-item text-decoration-none">Experience</a>
             <a href="#projects" className="nav-item text-decoration-none">Projects</a>
             <a href="#contact" className="nav-item text-decoration-none">Get In Touch</a>
         </ul>

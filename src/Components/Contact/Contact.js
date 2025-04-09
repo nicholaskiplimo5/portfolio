@@ -27,6 +27,8 @@ const Contact = () => {
       );
   };
 
+  console.log("form",form.current)
+
   return (
     <div className=" container" id={"contact"}>
       <div className=" row justify-content-center">
