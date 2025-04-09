@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
-import {handleSmoothNavigate} from '../../Functions/Functions';
+import {handleSmoothNavigate, nav_links} from '../../Functions/Functions';
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-  return (
+    return (
     <div className="container navbar header">
         {/* Hamburger Icon */}
         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
@@ -24,10 +24,11 @@ const Nav = () => {
         )}
         <Link to={"/"} className="nav-brand fw-bold deco-none name">NICHOLAS K.</Link>
         <ul className="nav fw-bold header_menu">
-            <a href="#skills" className="nav-item text-decoration-none">Skills</a>
-            <a href="#experience" className="nav-item text-decoration-none">Experience</a>
-            <a href="#projects" className="nav-item text-decoration-none">Projects</a>
-            <a href="#contact" className="nav-item text-decoration-none">Get In Touch</a>
+            {nav_links.map(({ id, label }) => (
+                <a key={id} href={id} className="nav-item text-decoration-none">
+                    {label}
+                </a>
+            ))}
         </ul>
     </div>
   );

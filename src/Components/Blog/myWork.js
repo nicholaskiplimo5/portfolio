@@ -5,6 +5,7 @@ import Footer from "../../Components/Footer/Footer";
 import { projectData } from "../../Static/Data/Data";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import ProNav from "../Nav/ProNav";
 
 
 const MyWork = () => {
@@ -20,7 +21,7 @@ const MyWork = () => {
 
     return (
         <div className="container">
-            <Nav />
+            <ProNav />
             <div className="blog alert-info" id="blog">
                 <div className="text-center">
                     <h3 className="title">My Projects</h3>
